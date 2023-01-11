@@ -1,0 +1,127 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    background-color: #001a34;
+    color: white;
+}
+
+p:first-of-type {
+    margin-right: 100px;
+}
+
+p:last-of-type {
+    margin-left: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: .3s ease;
+}
+
+a:hover {
+    color: #f91155;
+}
+
+.dropdown {
+    min-width: 15em;
+    margin: 2em;
+    position: relative;
+}
+
+.select {
+    background-color: #f91155;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #f91155 solid;
+    border-radius: .5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: .3s;
+    position: relative;
+    z-index: 2;
+}
+
+.select-clicked {
+    border: 2px #26489a;
+    box-shadow: 0 0 0.8em #26489a;
+}
+
+.select:hover {
+    background-color: #005bff;
+    border-color: #005bff;
+}
+.caret {
+    width: 40px;
+    height: 50px;
+    transition: .3s;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    list-style: none;
+    padding: .9em .5em;
+    background: #323741;
+    border: 1px #363a43;
+    border-radius: .5em;
+    box-shadow: 0 .5em 1em rgba(0, 0, 0, .2);
+    color: #eeeff1;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: .2s;
+    z-index: 1;
+}
+
+.menu li {
+    padding: .7em .5em;
+    margin: .3em 0;
+    border-radius: .5em;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background: #2a2d35;
+}
+
+.active {
+    background: #23242a;
+}
+
+.menu-open {
+    display: block;
+    opacity: 1;
+}
+
+.sign {
+    background-image: url('./sign.png');
+    background-repeat: no-repeat; 
+    width: 745px;
+    height: 72px;
+    margin: 50px auto 0 auto; 
+}
+
+@media screen and (max-width: 736px) {
+    p {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}
