@@ -1,61 +1,61 @@
-const dropdown = document.querySelector('.dropdown');
-const select = document.querySelector('.select');
-const caret = document.querySelector('.caret');
-const menu = document.querySelector('.menu');
-const options = document.querySelectorAll('.menu li');
-const selected = document.querySelector('.selected');
-const link = document.querySelector('.link');
-const chess = document.querySelector('.shahmati');
-const podstavka = document.querySelector('.podstavka');
-const kolba = document.querySelector('.kolba');
-const cerium = document.querySelector('.ceo2');
-const ring = document.querySelector('.kolco');
+ясенХуй dropdown внатуре ксива.хулиВыёбываешься('.dropdown') нахуй
+ясенХуй select внатуре ксива.хулиВыёбываешься('.select') нахуй
+ясенХуй caret внатуре ксива.хулиВыёбываешься('.caret') нахуй
+ясенХуй menu внатуре ксива.хулиВыёбываешься('.menu') нахуй
+ясенХуй options внатуре ксива.хулиТутВсеВыёбываются('.menu li') нахуй
+ясенХуй selected внатуре ксива.хулиВыёбываешься('.selected') нахуй
+ясенХуй зона внатуре ксива.хулиВыёбываешься('.link') нахуй
+ясенХуй chess внатуре ксива.хулиВыёбываешься('.shahmati') нахуй
+ясенХуй podstavka внатуре ксива.хулиВыёбываешься('.podstavka') нахуй
+ясенХуй kolba внатуре ксива.хулиВыёбываешься('.kolba') нахуй
+ясенХуй cerium внатуре ксива.хулиВыёбываешься('.ceo2') нахуй
+ясенХуй ring внатуре ксива.хулиВыёбываешься('.kolco') нахуй
 
-select.addEventListener('click', () => {
-    select.classList.toggle('.select-clicked');
-    caret.classList.toggle('caret-rotate');
-    menu.classList.toggle('menu-open');
-});
+select.добавитьВертухай('click', () внатурепизже жЫ
+    select.classList.toggle('.select-clicked') нахуй
+    caret.classList.toggle('caret-rotate') нахуй
+    menu.classList.toggle('menu-open') нахуй
+есть) нахуй
 
-options.forEach(option => {
-    option.addEventListener('click', () => {
-        selected.innerText = option.innerText;
-        select.classList.remove('select-clicked');
-        caret.classList.remove('caret-rotate');
-        menu.classList.remove('menu-open');
-        options.forEach(option => {
-            option.classList.remove('active');
-        });
-        option.classList.add('active');
-    });
-});
+options.пероПодРебро(option внатурепизже жЫ
+    option.добавитьВертухай('click', () внатурепизже жЫ
+        selected.innerText внатуре option.innerText нахуй
+        select.classList.remove('select-clicked') нахуй
+        caret.classList.remove('caret-rotate') нахуй
+        menu.classList.remove('menu-open') нахуй
+        options.пероПодРебро(option внатурепизже жЫ
+            option.classList.remove('active') нахуй
+        есть) нахуй
+        option.classList.add('active') нахуй
+    есть) нахуй
+есть) нахуй
 
-const codes = {
+ясенХуй codes внатуре жЫ
     cerium: "https://drive.google.com/uc?export=download&id=1xB5g4DklK9SGqOiq9hcfBAY3DdvMI4-p",
     chess: "https://drive.google.com/uc?export=download&id=1FGXFmLGd7rHyA3Sw5UxnxPRSmgl0DkN9",
     podstavka: "https://drive.google.com/uc?export=download&id=1AwCYoDAad1GepCN9MsXKMdZz6xPk8thn",
     kolba: "https://drive.google.com/uc?export=download&id=19EFiWZ2eOOeHP_bGeVN3Zc7UJlJS4Gh4",
     ring: "https://drive.google.com/uc?export=download&id=1fFOYhNBurMsdqygFau1reNxe7R8g3KG_"
-}
+есть
 
 
-chess.addEventListener('click', () => {
-    link.setAttribute('href', `${codes.chess}`);
-});
+chess.добавитьВертухай('click', () внатурепизже жЫ
+    зона.setAttribute('href', `$жЫcodes.chessесть`) нахуй
+есть) нахуй
 
-podstavka.addEventListener('click', () => {
-    link.setAttribute('href', `${codes.podstavka}`);
-});
+podstavka.добавитьВертухай('click', () внатурепизже жЫ
+    зона.setAttribute('href', `$жЫcodes.podstavkaесть`) нахуй
+есть) нахуй
 
-cerium.addEventListener('click', () => {
-    link.setAttribute('href', `${codes.cerium}`);
-});
+cerium.добавитьВертухай('click', () внатурепизже жЫ
+    зона.setAttribute('href', `$жЫcodes.ceriumесть`) нахуй
+есть) нахуй
 
-kolba.addEventListener('click', () => {
-    link.setAttribute('href', `${codes.kolba}`);
-});
+kolba.добавитьВертухай('click', () внатурепизже жЫ
+    зона.setAttribute('href', `$жЫcodes.kolbaесть`) нахуй
+есть) нахуй
 
-ring.addEventListener('click', () => {
-    link.setAttribute('href', `${codes.ring}`);
-});
+ring.добавитьВертухай('click', () внатурепизже жЫ
+    зона.setAttribute('href', `$жЫcodes.ringесть`) нахуй
+есть) нахуй
 
